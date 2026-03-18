@@ -1,0 +1,145 @@
+
+            <!DOCTYPE html>
+            <html lang="es">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Catálogo Exportado</title>
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+                <style>
+                    body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #333; margin: 0; padding: 2rem 0; }
+                    .catalog-wrapper {
+                        width: 95%;
+                        margin: 0 auto;
+                    }
+                    .book-entry { max-width: 1500px; margin: 0 auto 3rem auto; border-top: 1px solid #e0e0e0; padding-top: 1.5rem; }
+                    .collection-header { display: flex; align-items: center; gap: 8px; margin-bottom: 1.5rem; }
+                    .collection-header span { font-weight: 600; font-size: 0.9rem; }
+                    .book-content { display: flex; gap: 2rem; flex-wrap: wrap; }
+                    .book-cover { flex: 1; min-width: 200px; }
+                    .book-cover img { width: 100%; max-width: 400px; height: auto; }
+                    .cover-placeholder { width: 100%; max-width: 400px; height: 375px; background-color: #f0f0f0; border: 1px dashed #ccc; }
+                    .book-details { flex: 2; min-width: 300px; }
+                    .work-title { font-size: 1.5rem; font-style: italic; color: #4b5563; margin-bottom: 0.25rem; }
+                    .book-title { font-size: 1.35rem; font-weight: 700; color: #000; margin: 0 0 0.5rem 0; line-height: 1.2; } /* Adjusted font size */
+                    .price { font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem; }
+                    .separator { width: 50px; height: 3px; margin-bottom: 1.5rem; }
+                    .buttons-container { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem; }
+                    .purchase-button, .download-button { display: inline-flex; align-items: center; gap: 10px; color: white; font-weight: 700; text-decoration: none; padding: 0.8rem 1.5rem; border-radius: 5px; transition: opacity 0.2s; }
+                    .purchase-button:hover, .download-button:hover { opacity: 0.85; }
+                    .purchase-button svg, .download-button svg { stroke: white; }
+                    .download-button.pdf { background-color: #1d4ed8; }
+                    .download-button.epub { background-color: #3b82f6; }
+                    .metadata { list-style: none; padding: 0; margin: 0; font-size: 0.9rem; line-height: 1.6; color: #444; }
+                    .metadata li { margin-bottom: 0.3rem; }
+                    .metadata strong { color: #000; }
+                    .book-description { margin-top: 2rem; font-size: 0.95rem; line-height: 1.7; color: #333; }
+                    
+                    /* Estilos para la portada HTML */
+                    .cover-page {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        min-height: 100vh; /* Asegura que ocupe al menos toda la altura de la vista */
+                        text-align: center;
+                        padding: 2rem;
+                        box-sizing: border-box; /* Incluye padding en el tamaño total */
+                        page-break-after: always; /* Fuerza un salto de página después de la portada */
+                    }
+                    .cover-logo {
+                        max-width: 250px;
+                        max-height: 250px;
+                        height: auto;
+                        margin-bottom: 2em;
+                        border-radius: 8px; /* Pequeño redondeado para el logo */
+                        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+                    }
+                    .cover-title {
+                        font-size: 3em;
+                        font-weight: 700;
+                        color: #313332; /* Color gris oscuro */
+                        margin-top: 1em;
+                        line-height: 1.2;
+                    }
+                    .cover-subtitle { /* Estilo para el nuevo subtítulo */
+                        font-size: 1.8em;
+                        font-weight: 500;
+                        color: #555;
+                        margin-top: 0.5em;
+                        line-height: 1.2;
+                    }
+                    
+                    @media (max-width: 768px) {
+                        .book-content { flex-direction: column; }
+                        .book-cover img, .cover-placeholder { max-width: 200px; }
+                        .book-title { font-size: 1.5rem; }
+                        .cover-title { font-size: 2.2em; } /* Ajuste para móviles */
+                        .cover-subtitle { font-size: 1.5em; } /* Ajuste para móviles */
+                    }
+                    @media (max-width: 600px) { /* Nuevo: Regla para pantallas de 600px o menos */
+                        .book-cover img { max-width: 400px; width: 100%; } /* Asegura el ancho de 400px o 100% si es más pequeño */
+                    }
+                    @media (max-width: 495px) {
+                        .book-cover {
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+                        .collection-header, .buttons-container {
+                            justify-content: center;
+                        }
+                        .book-details {
+                            text-align: center;
+                        }
+                        .separator {
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+                    }
+                </style>
+            </head>
+            <body>
+                <div class="catalog-wrapper">
+                    
+                    
+                <div class="book-entry">
+                    
+                    <div class="collection-header">
+                        <svg width="10" height="10" viewBox="0 0 100 100"><polygon points="0,0 100,50 0,100" fill="#006bcd"/></svg>
+                        <span style="color: #006bcd;">Colección Aulas Universitarias</span>
+                        
+                        
+                    </div>
+                    <div class="book-content">
+                        <div class="book-cover">
+                            <img src="https://www.edunlu.unlu.edu.ar/sites/www.edunlu.unlu.edu.ar/files/site/optimiza-3.jpg" alt="Portada del libro por Alejandro Roberti, Gustavo Chijani y Esteban Gidekel">
+                        </div>
+                        <div class="book-details">
+                            
+                            <h2 class="book-title" style="font-size: 1.35rem;">Alejandro Roberti, Gustavo Chijani y Esteban Gidekel</h2>
+                            <p class="price" style="color: #04a04e;"></p>
+                            <div class="separator" style="background-color: #04a04e;"></div>
+                            <div class="buttons-container">
+                                
+                    <a href="https://drive.google.com/file/d/17fu8qczFWzZQmdSMB-yMzqtJjyenB_f3/view?usp=drive_link" class="download-button pdf" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                        DESCARGAR PDF GRATIS
+                    </a>
+                            </div>
+                            <ul class="metadata">
+                                <li><strong>Autores:</strong> Alejandro Roberti, Gustavo Chijani y Esteban Gidekel</li><li><strong>Año de publicación (digital):</strong> 2026</li><li><strong>Páginas:</strong> 431</li><li><strong>Formato:</strong> 16 × 23 cm</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="book-description">
+                        <p>Para el equipo docente a cargo de las asignaturas "Ingeniería de Procesos" e "Investigación Operativa" fue evidente desde 1988 que el sendero marcado por el Dr. Von der Becke era el correcto: la mejor manera de enseñar y aprender Investigación Operativa y Diseño de Experimentos era enfocar las actividades pedagógicas en el uso de herramientas de cómputo, que, en ese momento, si bien eran maravillosas, aún era extremadamente simples, poco accesibles y caras.<br><br>Desde esa fecha han pasado más de 40 cohortes de estudiantes de tres carreras de la Universidad que recibieron textos y soporte computacional. Son más de dos mil estudiantes a quienes se les dedica este libro.</p>
+                    </div>
+                </div>
+                
+                </div>
+            </body>
+            </html>
+            
