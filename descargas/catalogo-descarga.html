@@ -7,36 +7,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Inter', sans-serif; background: #f8fafc; color: #1e293b; padding: 2rem 1rem; }
-        .page-header { text-align: center; margin-bottom: 2.5rem; }
-        .page-header h1 { font-size: 2rem; font-weight: 800; color: #0f172a; }
-        .page-header p { color: #64748b; margin-top: 0.4rem; font-size: 0.9rem; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1.5rem; max-width: 1400px; margin: 0 auto; }
-        .card { background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.08); display: flex; flex-direction: column; transition: box-shadow 0.2s, transform 0.2s; }
-        .card:hover { box-shadow: 0 8px 28px rgba(0,0,0,0.14); transform: translateY(-3px); }
+        body { font-family: 'Inter', sans-serif; background: #f8fafc; color: #1e293b; padding: 1.5rem 0.5rem; }
+        .page-header { text-align: center; margin-bottom: 2rem; }
+        .page-header h1 { font-size: 1.6rem; font-weight: 800; color: #0f172a; }
+        .page-header p { color: #64748b; margin-top: 0.3rem; font-size: 0.8rem; }
+        .grid { display: grid; grid-template-columns: repeat(10, 1fr); gap: 0.75rem; max-width: 1700px; margin: 0 auto; }
+        .card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 1px 8px rgba(0,0,0,0.06); display: flex; flex-direction: column; transition: box-shadow 0.2s, transform 0.2s; }
+        .card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.1); transform: translateY(-2px); }
         .card-cover { width: 100%; aspect-ratio: 3/4; overflow: hidden; background: #e2e8f0; position: relative; }
         .card-img { width: 100%; height: 100%; object-fit: cover; display: block; }
         .card-img-placeholder { width: 100%; height: 100%; background: linear-gradient(135deg, #e2e8f0, #cbd5e1); }
-        .card-body { padding: 0.9rem 1rem 1rem; display: flex; flex-direction: column; gap: 0.4rem; flex: 1; }
-        .card-collection { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
-        .card-work-title { font-size: 0.8rem; font-style: italic; color: #475569; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-        .card-author { font-size: 0.85rem; font-weight: 600; color: #0f172a; line-height: 1.3; margin-top: auto; padding-top: 0.4rem; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
-        .card-author-role { font-weight: 400; font-size: 0.75rem; color: #64748b; display: block; margin-bottom: 0.1rem; }
-        .card-btns { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.65rem; }
-        .dl-btn { display: inline-flex; align-items: center; gap: 6px; padding: 0.45rem 0.85rem; border-radius: 8px; font-size: 0.78rem; font-weight: 700; text-decoration: none; color: #fff; transition: opacity 0.2s, transform 0.15s; flex: 1; justify-content: center; min-width: 70px; }
+        .card-body { padding: 0.6rem; display: flex; flex-direction: column; gap: 0.35rem; flex: 1; }
+        .card-collection { font-size: 0.6rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em; }
+        .card-work-title { font-size: 0.68rem; font-style: italic; color: #475569; line-height: 1.25; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; min-height: 1.6rem; }
+        .card-author { font-size: 0.72rem; font-weight: 600; color: #0f172a; line-height: 1.2; margin-top: auto; padding-top: 0.3rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; min-height: 1.6rem; }
+        .card-author-role { font-weight: 400; font-size: 0.6rem; color: #64748b; display: block; margin-bottom: 0.05rem; }
+        .card-btns { display: flex; flex-direction: column; gap: 0.3rem; margin-top: 0.5rem; }
+        .dl-btn { display: inline-flex; align-items: center; gap: 4px; padding: 0.35rem 0.65rem; border-radius: 6px; font-size: 0.65rem; font-weight: 700; text-decoration: none; color: #fff; transition: opacity 0.2s, transform 0.15s; width: 100%; justify-content: center; }
         .dl-btn:hover { opacity: 0.85; transform: scale(0.97); }
-        .dl-btn svg { flex-shrink: 0; }
+        .dl-btn svg { flex-shrink: 0; width: 12px; height: 12px; }
         .dl-pdf { background: #1d4ed8; }
         .dl-epub { background: #7c3aed; }
         .cover-page { display:flex; flex-direction:column; justify-content:center; align-items:center; min-height:100vh; text-align:center; padding:2rem; box-sizing:border-box; page-break-after:always; }
-        .cover-logo { max-width:250px; max-height:250px; height:auto; margin-bottom:2em; border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.1); }
-        @media (max-width: 480px) { .grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 1rem; } .page-header h1 { font-size: 1.5rem; } }
+        .cover-logo { max-width:200px; max-height:200px; height:auto; margin-bottom:1.5em; border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.1); }
+        @media (max-width: 1400px) { .grid { grid-template-columns: repeat(8, 1fr); } }
+        @media (max-width: 1100px) { .grid { grid-template-columns: repeat(6, 1fr); } }
+        @media (max-width: 800px) { .grid { grid-template-columns: repeat(4, 1fr); } }
+        @media (max-width: 600px) { .grid { grid-template-columns: repeat(3, 1fr); } .page-header h1 { font-size: 1.3rem; } }
+        @media (max-width: 450px) { .grid { grid-template-columns: repeat(2, 1fr); gap: 0.5rem; } }
     </style>
 </head>
 <body>
     
     <div class="page-header">
-        <P>41 PUBICACIONES DISPONIBLES</P>
+        <p>41 publicaciónes disponibles</p>
     </div>
     <div class="grid">
         
