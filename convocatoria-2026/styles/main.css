@@ -1,0 +1,346 @@
+/* ── Reset & base ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --azul:      #00468b;
+  --azul-mid:  #1a5fa8;
+  --azul-claro:#ddeaf7;
+  --acento:    #e8a000;
+  --rojo:      #c0392b;
+  --rojo-claro:#fdecea;
+  --verde:     #1e6e3a;
+  --verde-mid: #038D6C;
+  --texto:     #1e1e1e;
+  --gris-suave:#fefff1b9;
+  --gris-borde:#d0d8e4;
+  --blanco:    #ffffff;
+  --radio:     6px;
+  --sombra:    0 2px 12px rgba(0,0,0,.10);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--texto);
+  background: var(--gris-suave);
+}
+
+/* ── Header ── */
+header {
+  background: var(--verde);
+  color: var(--blanco);
+  padding: 2.5rem 1.5rem 2rem;
+  text-align: center;
+  border-bottom: 5px solid var(--acento);
+}
+
+header .kicker {
+  font-size: .85rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: #a8d5b8;
+  margin-bottom: .4rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: .6rem;
+}
+
+header h1 span {
+  color: var(--acento);
+}
+
+header .subtitulo {
+  font-size: 1.05rem;
+  color: #c0e8cc;
+}
+
+/* ── Franja de fechas ── */
+.banner-fechas {
+  background: var(--verde-mid);
+  color: var(--blanco);
+  text-align: center;
+  padding: .75rem 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: .03em;
+}
+
+/* ── Layout principal ── */
+.contenedor {
+  max-width: 900px;
+  margin: 2.5rem auto;
+  padding: 0 1.25rem;
+}
+
+/* ── Tarjeta genérica ── */
+.tarjeta {
+  background: var(--blanco);
+  border-radius: var(--radio);
+  box-shadow: var(--sombra);
+  padding: 2rem 2.25rem;
+  margin-bottom: 2rem;
+}
+
+/* ── Títulos de sección ── */
+h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--azul);
+  border-left: 4px solid var(--verde);
+  padding-left: .75rem;
+  margin-bottom: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--azul-mid);
+  margin: 1.25rem 0 .4rem;
+}
+
+p { margin-bottom: .9rem; }
+p:last-child { margin-bottom: 0; }
+
+/* ── Grid de colecciones ── */
+.grid-colecciones {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.col-card {
+  background: var(--blanco);
+  border-radius: var(--radio);
+  box-shadow: var(--sombra);
+  padding: 1.6rem;
+  border-top: 5px solid var(--rojo);
+}
+
+.col-card.acento { border-top-color: var(--acento); }
+
+.col-card > h2 {
+  font-size: 1rem;
+  border: none;
+  padding-left: 0;
+  margin-bottom: .5rem;
+  color: var(--rojo);
+}
+
+.col-card.acento > h2 { color: #b07000; }
+
+.col-desc {
+  font-size: .93rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* ── Bloque de serie dentro de col-card ── */
+.serie-bloque {
+  background: var(--rojo-claro);
+  border-left: 3px solid var(--rojo);
+  border-radius: 0 var(--radio) var(--radio) 0;
+  padding: .8rem 1rem;
+  margin-top: .25rem;
+}
+
+.col-card.acento .serie-bloque {
+  background: #fff8e8;
+  border-left-color: var(--acento);
+}
+
+.serie-bloque .serie-label {
+  font-size: .72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--rojo);
+  margin-bottom: .2rem;
+}
+
+.col-card.acento .serie-bloque .serie-label { color: #b07000; }
+
+.serie-bloque h3 {
+  font-size: .95rem;
+  font-weight: 700;
+  color: var(--rojo);
+  margin: 0 0 .35rem;
+}
+
+.col-card.acento .serie-bloque h3 { color: #8a5c00; }
+
+.serie-bloque p {
+  font-size: .88rem;
+  margin: 0;
+  color: #333;
+}
+
+.serie-badge {
+  display: inline-block;
+  background: var(--azul-claro);
+  color: var(--azul);
+  font-size: .78rem;
+  font-weight: 700;
+  border-radius: 20px;
+  padding: .2rem .7rem;
+  margin-bottom: .7rem;
+}
+
+/* ── Lista de requisitos ── */
+ul.req {
+  list-style: none;
+  padding: 0;
+}
+
+ul.req li {
+  padding: .45rem 0 .45rem 1.6rem;
+  border-bottom: 1px solid var(--gris-borde);
+  position: relative;
+}
+
+ul.req li:last-child { border-bottom: none; }
+
+ul.req li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--acento);
+  font-weight: 700;
+}
+
+/* ── Normas de publicación (lista compacta) ── */
+ul.normas {
+  list-style: disc;
+  padding-left: 1.4rem;
+}
+
+ul.normas li { margin-bottom: .45rem; }
+
+/* ── Etapas de evaluación ── */
+.etapas {
+  counter-reset: etapa;
+  list-style: none;
+  padding: 0;
+}
+
+.etapas li {
+  counter-increment: etapa;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.1rem;
+  align-items: flex-start;
+}
+
+.etapas li::before {
+  content: counter(etapa);
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  background: var(--azul);
+  color: var(--blanco);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: .9rem;
+  margin-top: .1rem;
+}
+
+/* ── Bloque de contacto ── */
+.contacto-box {
+  background: var(--azul-claro);
+  border: 1px solid var(--gris-borde);
+  border-radius: var(--radio);
+  padding: 1.4rem 1.75rem;
+  text-align: center;
+}
+
+.contacto-box a {
+  color: var(--azul);
+  font-weight: 700;
+  word-break: break-all;
+  text-decoration: underline;
+}
+
+/* ── Tabla de dictámenes ── */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .93rem;
+  margin-top: .5rem;
+}
+
+thead tr { background: var(--azul); color: var(--blanco); }
+thead th { padding: .6rem .8rem; text-align: left; }
+
+tbody tr:nth-child(even) { background: var(--azul-claro); }
+tbody td { padding: .55rem .8rem; border-bottom: 1px solid var(--gris-borde); }
+
+/* ── Anexo 2 ── */
+ol.anexo {
+  padding-left: 1.4rem;
+}
+
+ol.anexo li { margin-bottom: .6rem; }
+
+/* ── Footer ── */
+footer {
+  background: var(--azul);
+  color: #b0c8e8;
+  text-align: center;
+  padding: 1.25rem 1rem;
+  font-size: .85rem;
+  margin-top: 1rem;
+}
+
+footer strong { color: var(--blanco); }
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  header h1 { font-size: 1.4rem; }
+  .grid-colecciones { grid-template-columns: 1fr; }
+  .tarjeta { padding: 1.25rem; }
+}
+
+/* ── CTA descarga ── */
+.cta-descarga {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.cta-descarga p {
+  max-width: 620px;
+  margin: 0 auto 1.5rem;
+  color: #444;
+}
+
+.btn-descarga {
+  display: inline-block;
+  background: var(--verde);
+  color: var(--blanco);
+  text-decoration: none;
+  font-weight: 700;
+  padding: .95rem 1.8rem;
+  border-radius: var(--radio);
+  font-size: 1rem;
+  transition: all .2s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,.12);
+}
+
+.btn-descarga:hover {
+  background: #15552c;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,.16);
+}
+
+.btn-descarga:active {
+  transform: translateY(0);
+}
