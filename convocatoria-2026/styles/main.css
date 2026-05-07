@@ -308,6 +308,7 @@ footer strong { color: var(--blanco); }
   header h1 { font-size: 1.4rem; }
   .grid-colecciones { grid-template-columns: 1fr; }
   .tarjeta { padding: 1.25rem; }
+  .banner-fechas { font-size: 1rem; }
 }
 
 /* ── CTA descarga ── */
