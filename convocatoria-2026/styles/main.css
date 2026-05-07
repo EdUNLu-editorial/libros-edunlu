@@ -89,9 +89,9 @@ header .subtitulo {
 
 /* ── Títulos de sección ── */
 h2 {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 700;
-  color: var(--azul);
+  color: var(--verde-mid);
   border-left: 4px solid var(--verde);
   padding-left: .75rem;
   margin-bottom: 1.25rem;
