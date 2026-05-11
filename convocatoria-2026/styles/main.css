@@ -267,7 +267,7 @@ ul.normas li { margin-bottom: .45rem; }
 .contacto-box a {
   color: var(--azul);
   font-weight: 700;
-  word-break: break-all;
+  white-space: nowrap;
   text-decoration: underline;
 }
 
@@ -310,7 +310,7 @@ footer strong { color: var(--blanco); }
   .grid-colecciones { grid-template-columns: 1fr; }
   .tarjeta { padding: 1.25rem; }
   .banner-fechas { font-size: 1rem; line-height: 1.3; }
-  .contacto-box { font-size: 0.85rem; }
+  .contacto-box { font-size: 0.85rem; padding: 1rem 0.8rem; }
   .contacto-box a { font-size: 0.85rem; }
 }
 
