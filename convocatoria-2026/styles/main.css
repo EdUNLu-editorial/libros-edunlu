@@ -348,3 +348,19 @@ footer strong { color: var(--blanco); }
 .btn-descarga:active {
   transform: translateY(0);
 }
+
+/* ── Botón pequeño (banner) ── */
+.banner-cta {
+  margin-top: .5rem;
+}
+
+.btn-descarga-sm {
+  padding: .45rem 1.2rem;
+  font-size: .85rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,.10);
+  background: var(--verde-mid);
+}
+
+.btn-descarga-sm:hover {
+  background: #027a5a;
+}
