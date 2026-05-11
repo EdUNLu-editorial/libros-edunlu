@@ -358,9 +358,11 @@ footer strong { color: var(--blanco); }
   padding: .45rem 1.2rem;
   font-size: .85rem;
   box-shadow: 0 2px 6px rgba(0,0,0,.10);
-  background: var(--verde-mid);
+  background: var(--gris-suave);
+  color: var(--verde-mid);
 }
 
 .btn-descarga-sm:hover {
-  background: #027a5a;
+  background: #f5f5dc;
+  color: #027a5a;
 }
