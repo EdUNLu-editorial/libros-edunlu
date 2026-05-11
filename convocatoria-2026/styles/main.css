@@ -310,7 +310,7 @@ footer strong { color: var(--blanco); }
   .grid-colecciones { grid-template-columns: 1fr; }
   .tarjeta { padding: 1.25rem; }
   .banner-fechas { font-size: 1rem; line-height: 1.3; }
-  .contacto-box { font-size: 0.85rem; padding: 1rem 0.8rem; }
+  .contacto-box { font-size: 0.85rem; padding: 0.25rem 0.5rem; }
   .contacto-box a { font-size: 0.85rem; }
 }
 
