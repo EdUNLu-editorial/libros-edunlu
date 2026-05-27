@@ -1,3 +1,12 @@
+<style type="text/css">@media screen and (max-width: 600px) {
+  .iframe-ajustado {
+    height: 2000px !important;
+  }
+}
+</style>
+
+<div style="text-align: center;"><iframe allowfullscreen="" class="iframe-ajustado" src="https://edunlu-editorial.github.io/libros-edunlu/publicaciones/conocimiento-ambiental-aportes-teorico-metodologicos-para-su-construccion.html" style="width: 100%; height: 1000px; border: 0px solid #ccc;"></iframe></div>
+
 <div style="text-align: center;"><iframe allowfullscreen="" class="iframe-ajustado" src="https://edunlu-editorial.github.io/libros-edunlu/publicaciones/5-decadas-en-15-peliculas-sobre-el-trabajo-escenas-de-subjetividades-en-disputa.html" style="width: 100%; height: 1000px; border: 0px solid #ccc;"></iframe></div>
 
 <div style="text-align: center;"><iframe allowfullscreen="" class="iframe-ajustado" src="https://edunlu-editorial.github.io/libros-edunlu/publicaciones/a-orillas-del-cuento.html" style="width: 100%; height: 1000px; border: 0px solid #ccc;"></iframe></div>
