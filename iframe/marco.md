@@ -5,6 +5,8 @@
 }
 </style>
 
+<div style="text-align: center;"><iframe allowfullscreen="" class="iframe-ajustado" src="https://edunlu-editorial.github.io/libros-edunlu/publicaciones/entre-ilusiones-y-frustraciones.html" style="width: 100%; height: 1000px; border: 0px solid #ccc;"></iframe></div>
+
 <div style="text-align: center;"><iframe allowfullscreen="" class="iframe-ajustado" src="https://edunlu-editorial.github.io/libros-edunlu/publicaciones/conocimiento-ambiental-aportes-teorico-metodologicos-para-su-construccion.html" style="width: 100%; height: 1000px; border: 0px solid #ccc;"></iframe></div>
 
 <div style="text-align: center;"><iframe allowfullscreen="" class="iframe-ajustado" src="https://edunlu-editorial.github.io/libros-edunlu/publicaciones/5-decadas-en-15-peliculas-sobre-el-trabajo-escenas-de-subjetividades-en-disputa.html" style="width: 100%; height: 1000px; border: 0px solid #ccc;"></iframe></div>
@@ -40,6 +42,8 @@
 <div style="text-align: center;"><iframe allowfullscreen="" class="iframe-ajustado" src="https://edunlu-editorial.github.io/libros-edunlu/publicaciones/contribuciones-de-la-eugenesia-biotipologia-y-medicina-social-a-la-intervencion-social.html" style="width: 100%; height: 1000px; border: 0px solid #ccc;"></iframe></div>
 
 <div style="text-align: center;"><iframe allowfullscreen="" class="iframe-ajustado" src="https://edunlu-editorial.github.io/libros-edunlu/publicaciones/de-futbol-embriones-y-ecosistemas.html" style="width: 100%; height: 1000px; border: 0px solid #ccc;"></iframe></div>
+
+**HASTA ACÁ**
 
 <div style="text-align: center;"><iframe allowfullscreen="" class="iframe-ajustado" src="https://edunlu-editorial.github.io/libros-edunlu/publicaciones/de-la-pampa-criolla-a-la-gringa-chivilcoy-entre-mediados-del-siglo-xix-y-principios-del-xx.html" style="width: 100%; height: 1000px; border: 0px solid #ccc;"></iframe></div>
 
