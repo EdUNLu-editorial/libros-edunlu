@@ -7,12 +7,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Inter', sans-serif; background: hsl(0, 0%, 100%); color: #1e293b; padding: 1.5rem 1.75rem; }
+        body { font-family: 'Inter', sans-serif; background: #f8fafc; color: #ffffff; padding: 1.5rem 1.75rem; }
         .page-header { text-align: center; margin-bottom: 2rem; }
         .page-header h1 { font-size: 1.6rem; font-weight: 800; color: #0f172a; }
         .page-header p { color: #64748b; margin-top: 0.3rem; font-size: 0.8rem; }
         .grid { display: grid; grid-template-columns: repeat(8, 1fr); gap: 0.8rem; max-width: 1400px; margin: 0 auto; }
-        .card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 1px 8px rgba(0,0,0,0.06); display: flex; flex-direction: column; transition: box-shadow 0.2s, transform 0.2s; box-shadow: 0 2px 10px rgba(68, 151, 100, 0.438);}
+        .card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 1px 8px rgba(0,0,0,0.06); display: flex; flex-direction: column; transition: box-shadow 0.2s, transform 0.2s; box-shadow: 0 2px 10px rgba(68,151,100,0.438); }
         .card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.1); transform: translateY(-2px); }
         .card-cover { width: 100%; aspect-ratio: 3/4; overflow: hidden; background: #e2e8f0; position: relative; }
         .card-img { width: 100%; height: 100%; object-fit: cover; display: block; }
@@ -47,6 +47,15 @@
     
     <div class="grid">
         
+        <div class="card">
+            <div class="card-cover"><img src="https://www.edunlu.unlu.edu.ar/sites/www.edunlu.unlu.edu.ar/files/site/entre-ilusiones-y-frustraciones.jpg" alt="Portada" class="card-img" onerror="this.onerror=null;this.style.background='#e2e8f0'"></div>
+            <div class="card-body">
+                <p class="card-collection" style="color:#006bcd">Colección Aulas Universitarias</p>
+                <p class="card-work-title">ENTRE ILUSIONES Y FRUSTRACIONES. Conferencias, declaraciones, acuerdos, mandatos, compromisos y pactos sobre el comercio internacional y el desarrollo desde la segunda posguerra: una selección de textos oficiales</p>
+                <p class="card-author"><span class="card-author-role">Autora:</span> Elda Tancredi</p>
+                <div class="card-btns"><a href="https://drive.google.com/file/d/1JO7Cov2P6K5hfmkWWwOCvsYMR563U0lO/view?usp=sharing" class="dl-btn dl-pdf" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> PDF</a></div>
+            </div>
+        </div>
         <div class="card">
             <div class="card-cover"><img src="https://www.edunlu.unlu.edu.ar/sites/www.edunlu.unlu.edu.ar/files/site/optimiza-3.jpg" alt="Portada" class="card-img" onerror="this.onerror=null;this.style.background='#e2e8f0'"></div>
             <div class="card-body">
@@ -188,7 +197,7 @@
                 <p class="card-collection" style="color:#FF0000">Colección Ciencias</p>
                 <p class="card-work-title">El Alero Nestares. Un Sitio de Altura en la Meseta de Corralito, Sudoeste de Río Negro.</p>
                 <p class="card-author"><span class="card-author-role">Compiladores:</span> Eduardo Crivelli Montero y Mariano Ramos</p>
-                <div class="card-btns"><a href="https://drive.google.com/file/d/1u4cNJWE2PWCpxi7sS3Qa_BEvcnryaYug/view?usp=sharing" class="dl-btn dl-pdf" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> PDF</a></div>
+                <div class="card-btns"><a href="https://www.edunlu.unlu.edu.ar/sites/www.edunlu.unlu.edu.ar/files/site/Recurso%2051_1.png" class="dl-btn dl-pdf" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> PDF</a></div>
             </div>
         </div>
         <div class="card">
@@ -413,7 +422,7 @@
                 
                 <p class="card-work-title">PRÁCTICAS Y PERSPECTIVAS DE LA INVESTIGACIÓN Y LA EXTENSIÓN EN EL DEPARTAMENTO DE EDUCACIÓN</p>
                 <p class="card-author"><span class="card-author-role">Coordinadoras:</span> Alicia Itatí Palermo y Luciana Manni</p>
-                <div class="card-btns"><a href="http://www.edunlu.unlu.edu.ar/sites/www.edunlu.unlu.edu.ar/files/site/PRACTIVAS Y PERSPECTIVAS DE LA INVESTIGACION.pdf" class="dl-btn dl-pdf" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> PDF</a></div>
+                <div class="card-btns"><a href="http://www.edunlu.unlu.edu.ar/sites/www.edunlu.unlu.edu.ar/files/site/PRACTIVAS%20Y%20PERSPECTIVAS%20DE%20LA%20INVESTIGACION.pdf" class="dl-btn dl-pdf" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> PDF</a></div>
             </div>
         </div>
     </div>
