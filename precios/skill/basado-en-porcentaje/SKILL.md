@@ -18,7 +18,7 @@ Antes de ejecutar, reemplaza el valor numerico con el porcentaje deseado:
 
 ## Price tag format in HTML
 ```html
-<p class="price" style="color: #04a04e;">Precio pre-compra online con 50% de descuento: $10000.00.-</p>
+<p class="price" style="color: #04a04e;">Precio pre-compra: $10000.00.-</p>
 ```
 
 El valor monetario siempre tiene el formato `$XXXX.XX.-` (signo dolar, digitos, punto, dos decimales, punto, guion).
@@ -48,7 +48,7 @@ Captura el grupo numerico (ej: `10000.00`) desde `$10000.00.-`.
 
 ### 4. Regex para reemplazar el precio
 ```
-Find:    (<p class="price"[^>]*>Precio pre-compra online con 50% de descuento: )\$[\d,]+\.\d{2}\.\-(</p>)
+Find:    (<p class="price"[^>]*>Precio pre-compra: )\$[\d,]+\.\d{2}\.\-(</p>)
 Replace: $1{new_price}$2
 ```
 
@@ -67,13 +67,13 @@ Get-ChildItem "$htmlDir/*.html" | ForEach-Object {
     $content = Get-Content $_.FullName -Raw -Encoding UTF8
 
     # Extract current price
-    if ($content -match '<p class="price"[^>]*>Precio pre-compra online con 50% de descuento: \$([\d,]+\.\d{2})\.\-</p>') {
+    if ($content -match '<p class="price"[^>]*>Precio pre-compra: \$([\d,]+\.\d{2})\.\-</p>') {
         $currentValue = [decimal]($Matches[1] -replace ',', '')
         $factor = 1 + ($porcentaje / 100)
         $newValue = [math]::Round($currentValue * $factor, 2)
         $newPrice = '$' + $newValue.ToString('F2', [System.Globalization.CultureInfo]::InvariantCulture) + '.-'
 
-        $pattern = '(<p class="price"[^>]*>Precio pre-compra online con 50% de descuento: )\$[\d,]+\.\d{2}\.\-(</p>)'
+        $pattern = '(<p class="price"[^>]*>Precio pre-compra: )\$[\d,]+\.\d{2}\.\-(</p>)'
         $replacement = "`$1$newPrice`$2"
         $content = $content -replace $pattern, $replacement
 

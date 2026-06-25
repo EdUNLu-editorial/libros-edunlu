@@ -18,7 +18,7 @@ HTML:  publicaciones/el-interes-superior-del-nino.html
 
 ## Price tag format in HTML
 ```html
-<p class="price" style="color: #04a04e;">Precio pre-compra online con 50% de descuento: $3500.00.-</p>
+<p class="price" style="color: #04a04e;">Precio pre-compra: $3500.00.-</p>
 ```
 
 The price value is always in the format `$XXXX.XX.-` (dollar sign, digits, dot, two decimals, dot, dash).
@@ -41,7 +41,7 @@ For each `.html` file:
 
 ### 3. Regex replacement
 ```
-Find:    (<p class="price"[^>]*>Precio pre-compra online con 50% de descuento: )\$[\d,]+\.\d{2}\.\-(</p>)
+Find:    (<p class="price"[^>]*>Precio pre-compra: )\$[\d,]+\.\d{2}\.\-(</p>)
 Replace: $1{new_price}$2
 ```
 Where `{new_price}` is the value from the XML dictionary.
@@ -67,7 +67,7 @@ Get-ChildItem "$htmlDir/*.html" | ForEach-Object {
     if ($prices.ContainsKey($name)) {
         $content = Get-Content $_.FullName -Raw -Encoding UTF8
         $newPrice = $prices[$name]
-        $pattern = '(<p class="price"[^>]*>Precio pre-compra online con 50% de descuento: )\$[\d,]+\.\d{2}\.\-(</p>)'
+        $pattern = '(<p class="price"[^>]*>Precio pre-compra: )\$[\d,]+\.\d{2}\.\-(</p>)'
         $replacement = "`$1$newPrice`$2"
         $content = $content -replace $pattern, $replacement
         Set-Content $_.FullName -Value $content -Encoding UTF8 -NoNewline
