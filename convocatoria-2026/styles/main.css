@@ -437,3 +437,13 @@ footer strong {
     background: #f5f5dc;
     color: #027a5a;
 }
+
+.btn-descarga-sm.btn-invertido {
+    background: var(--verde-mid);
+    color: var(--blanco);
+}
+
+.btn-descarga-sm.btn-invertido:hover {
+    background: #027a5a;
+    color: var(--blanco);
+}
