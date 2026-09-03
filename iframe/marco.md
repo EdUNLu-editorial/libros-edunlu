@@ -4,6 +4,7 @@
   }
 }
 </style>
+<div style="text-align: center;"><iframe allowfullscreen="" class="iframe-ajustado" src="https://edunlu-editorial.github.io/libros-edunlu/publicaciones/agricultura-familiar-y-agroecologia.html" style="width: 100%; height: 1000px; border: 0px solid #ccc;"></iframe></div>
 
 <div style="text-align: center;"><iframe allowfullscreen="" class="iframe-ajustado" src="https://edunlu-editorial.github.io/libros-edunlu/publicaciones/inquietudes-el-libro-de-un-fisico-curioso.html" style="width: 100%; height: 1000px; border: 0px solid #ccc;"></iframe></div>
 
