@@ -4,6 +4,9 @@
   }
 }
 </style>
+<div style="text-align: center;"><iframe allowfullscreen="" class="iframe-ajustado" src="https://edunlu-editorial.github.io/libros-edunlu/publicaciones/juegos-y-actividades-para-el-dialogo-intercultural.html" style="width: 100%; height: 1000px; border: 0px solid #ccc;"></iframe></div>
+
+</style>
 <div style="text-align: center;"><iframe allowfullscreen="" class="iframe-ajustado" src="https://edunlu-editorial.github.io/libros-edunlu/publicaciones/la-mediatizacion-de-la-ensenanza-en-la-universidad.html" style="width: 100%; height: 1000px; border: 0px solid #ccc;"></iframe></div>
 
 <div style="text-align: center;"><iframe allowfullscreen="" class="iframe-ajustado" src="https://edunlu-editorial.github.io/libros-edunlu/publicaciones/el-concepto-del-tiempo-en-arqueologia.html" style="width: 100%; height: 1000px; border: 0px solid #ccc;"></iframe></div>
