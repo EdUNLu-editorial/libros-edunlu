@@ -4,6 +4,8 @@
   }
 }
 </style>
+<div style="text-align: center;"><iframe allowfullscreen="" class="iframe-ajustado" src="https://edunlu-editorial.github.io/libros-edunlu/publicaciones/entre-el-antiguo-testamento-y-la-biologia-molecular-una-breve-historia-de-la-leprologia.html" style="width: 100%; height: 1000px; border: 0px solid #ccc;"></iframe></div>
+
 <div style="text-align: center;"><iframe allowfullscreen="" class="iframe-ajustado" src="https://edunlu-editorial.github.io/libros-edunlu/publicaciones/marta-tome-reflexiones-acerca-de-la-educacion-intercultural-en-argentina.html" style="width: 100%; height: 1000px; border: 0px solid #ccc;"></iframe></div>
 
 <div style="text-align: center;"><iframe allowfullscreen="" class="iframe-ajustado" src="https://edunlu-editorial.github.io/libros-edunlu/publicaciones/juegos-y-actividades-para-el-dialogo-intercultural.html" style="width: 100%; height: 1000px; border: 0px solid #ccc;"></iframe></div>
