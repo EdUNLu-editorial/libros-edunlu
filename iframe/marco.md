@@ -4,6 +4,8 @@
   }
 }
 </style>
+<div style="text-align: center;"><iframe allowfullscreen="" class="iframe-ajustado" src="https://edunlu-editorial.github.io/libros-edunlu/publicaciones/presencia-historica-y-organizacion-etnopolitica-del-pueblo-mapuche-en-carhue-provincia-de-buenos-aires.html" style="width: 100%; height: 1000px; border: 0px solid #ccc;"></iframe></div>
+
 <div style="text-align: center;"><iframe allowfullscreen="" class="iframe-ajustado" src="https://edunlu-editorial.github.io/libros-edunlu/publicaciones/Introduccion-a-la-quimica-inorganica-descriptiva.html" style="width: 100%; height: 1000px; border: 0px solid #ccc;"></iframe></div>
 
 <div style="text-align: center;"><iframe allowfullscreen="" class="iframe-ajustado" src="https://edunlu-editorial.github.io/libros-edunlu/publicaciones/mujeres-que-hacen-historia-en-la-unlu.html" style="width: 100%; height: 1000px; border: 0px solid #ccc;"></iframe></div>
